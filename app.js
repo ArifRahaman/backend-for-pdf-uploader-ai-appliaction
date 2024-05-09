@@ -98,7 +98,7 @@ app.post(
     }
     // You can process the uploaded file here, such as saving its path to a database
     const filePath = req.file.path;
-    const imageUrl = `https://backend-for-pdf-uploader-ai-appliaction-1.onrender.com/${filePath}`; // Modify this to match your server setup
+    const imageUrl = `https://backend-for-pdf-uploader-ai-appliaction-2.onrender.com/${filePath}`; // Modify this to match your server setup
 
     // Send a JSON response with the image URL
     res.json({ imageUrl });

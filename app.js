@@ -15,7 +15,7 @@ app.use(express.json());
 // app.use(cors());
 app.use(
   cors({
-    origin: "*",
+    origin: "https://backend-aipdfarif.onrender.com/",
     credentials: true,
   })
 );

@@ -12,13 +12,14 @@ require("dotenv").config();
 const User = require('./models/User'); // Import the User model
 // Middleware
 app.use(express.json());
-// app.use(cors());
+
 app.use(
   cors({
-    origin: "https://backend-aipdfarif.onrender.com/",
+    origin: "https://frontend-pdf-ai-chatbot-arifrahaman.onrender.com",
     credentials: true,
   })
 );
+
 
 app.use("/files", express.static("files"));
 

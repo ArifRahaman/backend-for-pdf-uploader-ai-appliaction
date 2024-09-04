@@ -15,10 +15,11 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://frontend-pdf-ai-chatbot-arifrahaman.onrender.com",
+    origin: "https://frontend-pdf-ai-chatbot-arifrahaman.onrender.com", // Explicit origin
     credentials: true,
   })
 );
+
 
 
 app.use("/files", express.static("files"));

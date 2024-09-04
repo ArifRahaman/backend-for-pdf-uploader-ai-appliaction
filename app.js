@@ -20,7 +20,7 @@ app.use(express.json());
 //   })
 // );
 const allowedOrigins = [
-  process.env.FRONTEND_URL || "https://frontend-pdf-ai-chatbot-arifrahaman.onrender.com/",
+  process.env.FRONTEND_URL || "https://frontend-pdf-ai-chatbot-arifrahaman.onrender.com",
   // "http://localhost:5174",
 ];
 app.use(cors({

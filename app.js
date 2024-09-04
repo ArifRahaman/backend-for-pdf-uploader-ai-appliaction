@@ -13,12 +13,20 @@ const User = require('./models/User'); // Import the User model
 // Middleware
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: "https://frontend-pdf-ai-chatbot-arifrahaman.onrender.com", // Explicit origin
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: "https://frontend-pdf-ai-chatbot-arifrahaman.onrender.com", // Explicit origin
+//     credentials: true,
+//   })
+// );
+const allowedOrigins = [
+  process.env.FRONTEND_URL || "https://frontend-pdf-ai-chatbot-arifrahaman.onrender.com/",
+  // "http://localhost:5174",
+];
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true,
+}));
 
 
 
